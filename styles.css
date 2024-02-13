@@ -1,1 +1,54 @@
 /*  your css code here. If applicable */
+*{
+	margin : 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root{
+	--active-color : #3498db;
+	--non-active-color : rgb(224,224,224);
+}
+body{
+	display : flex;
+	flex-direction : column;
+	justify-content : center;
+	align-items : center;
+	height: 100vh;
+    background-color: rgb(246, 247, 251);
+	gap : 40px;
+}
+.circle-container{
+	display : flex;
+	justify-content : center;
+	align-items : center;
+}
+.circle{
+	padding : 4px 9px 5px 10px;
+	border : 3px solid var(--non-active-color);
+	border-radius : 50%;
+	color: rgb(178, 177, 175);
+	font-size : 1.2rem;
+}
+.connection{
+	width : 40px;
+	border : 3px solid var(--non-active-color);
+}
+.btn{
+	border : none;
+	color : white;
+	background-color : var(--active-color);
+	height : 35px;
+	width : 90px;
+	border-radius : 8px;
+}
+.button{
+	display : flex;
+	gap : 20px;
+}
+.active{
+	border-color: var(--active-color);
+    color: var(--active-color);
+}
+button:disabled {
+    background-color: var(--non-active-color);
+}
